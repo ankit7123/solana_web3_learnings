@@ -1,0 +1,16 @@
+Solana uses a Proof of History (PoH) consensus mechanism. This mechanism is unique to Solana and is designed to provide a highly efficient and scalable solution for validating transactions and maintaining the integrity of the blockchain.
+
+Here's a breakdown of how PoH works:
+
+Timestamping: Each transaction is assigned a timestamp based on the number of clock ticks that have passed since the genesis block.
+Verification: Solana's validators verify the timestamp of each transaction by comparing it to the timestamps of previous transactions. This process ensures that transactions are ordered correctly and that no transactions are skipped or duplicated.
+Leader Election: A leader is selected based on the validator with the highest stake and the most recent timestamp. The leader is responsible for proposing and verifying blocks.
+Block Production: The leader collects transactions and creates a new block. The block includes a hash of the previous block, a list of transactions, and a timestamp.
+Block Validation: Other validators verify the block by checking the validity of the transactions and ensuring that the timestamp is correct.
+Consensus: If a majority of validators agree that the block is valid, it is added to the blockchain.
+Key advantages of PoH:
+
+High throughput: PoH allows Solana to process a large number of transactions per second, making it one of the fastest blockchains in the world.
+Low latency: Transactions can be confirmed in a matter of seconds, providing a fast and responsive user experience.
+Security: PoH is designed to be highly secure, with a focus on preventing attacks such as double-spending and Sybil attacks.
+Scalability: Solana's architecture allows it to scale horizontally, meaning that it can handle increasing transaction volume without compromising performance.
